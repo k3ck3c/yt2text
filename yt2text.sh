@@ -14,6 +14,34 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
+valid_languages=(af am ar as az ba be bg bn bo br bs ca cs cy da de el en es et eu fa fi fo fr gl gu ha haw he hi hr ht hu hy id is it ja jw ka kk km kn ko la lb ln lo lt lv mg mi mk ml mn mr ms mt my ne nl nn n
+o oc pa pl ps pt ro ru sa sd si sk sl sn so sq sr su sv sw ta te tg th tk tl tr tt uk ur uz vi yi yo yue zh)
+
+# Vérification du paramètre obligatoire
+if [ -z "$1" ]; then
+    echo "Usage: $0 URL [langue] [api|w]"
+    echo "  - URL: l'URL de la vidéo à télécharger"
+    echo "  - langue: code de langue (défaut: fr)"
+    echo "    Langues autorisées: ${valid_languages[*]}"
+    echo "  - mode: api pour LemonFox ou w pour Whisper (défaut: api)"
+    exit 1
+fi
+
+# Vérification de la langue
+is_valid_language=0
+for valid_lang in "${valid_languages[@]}"; do
+    if [ "$lang" = "$valid_lang" ]; then
+        is_valid_language=1
+        break
+    fi
+done
+
+if [ $is_valid_language -eq 0 ]; then
+    echo "Erreur: Langue '$lang' non supportée."
+    echo "Langues autorisées: ${valid_languages[*]}"
+    exit 1
+fi
+
 # Téléchargement audio avec capture directe du nom de fichier
 echo "Téléchargement audio en cours..."
 outfile=$(yt-dlp --restrict-filenames -o "%(channel)s-%(title)s.%(ext)s" -x --audio-format mp3 "$1" | 
