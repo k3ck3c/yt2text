@@ -72,7 +72,7 @@ echo "Transcription en cours via ${extract}..."
 
 if [ "$extract" = "w" ]; then
     # Utiliser Whisper localement
-    whisper "$outfile" > "$output_path" || {
+    whisper --language "$lang" "$outfile" > "$output_path" || {
         echo "Erreur lors de la transcription avec Whisper"
         exit 1
     }
