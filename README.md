@@ -12,6 +12,7 @@ sh yt2text.sh "https://www.youtube.com/watch?v=xJCW_EJjkLg" jp w
 creates a file 
 MUSIC_Liverary/MUSIC_Liverary-HAJIME_CHITOSE_WADATSUMI_NO_KI_MUSIC_VIDEO_FULL.txt
 which contains
+
 Detecting language using up to the first 30 seconds. Use `--language` to specify the language
 Detected language: Japanese
 [00:00.000 --> 00:10.000] 作詞・作曲・編曲 初音ミク
