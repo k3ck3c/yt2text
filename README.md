@@ -3,14 +3,19 @@ get the text of a Youtube Video using whisper or any AI tool
 this script 
 downloads only the audio of a Youtube vid
 gives a filename without emoticon or space, using the author and the title of the video
-uses the audio to whisper or any AI tool
+sends the audio to whisper or any AI tool
 creates a directory by YouTube author
 puts the text in the directory
+
 example 1
 the command 
+
 sh yt2text.sh "https://www.youtube.com/watch?v=xJCW_EJjkLg" jp w
+
 creates a file 
+
 MUSIC_Liverary/MUSIC_Liverary-HAJIME_CHITOSE_WADATSUMI_NO_KI_MUSIC_VIDEO_FULL.txt
+
 which contains
 
 Detecting language using up to the first 30 seconds. Use `--language` to specify the language
