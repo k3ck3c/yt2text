@@ -12,7 +12,11 @@ the command
 
 sh yt2text.sh "https://www.youtube.com/watch?v=xJCW_EJjkLg" jp w
 
-creates a file 
+we pass jp to help determine the language and avoir analysis og the first 30 seconds of audio to determine the language
+
+we pass w as we want to use locally whisper
+
+it creates a file 
 
 MUSIC_Liverary/MUSIC_Liverary-HAJIME_CHITOSE_WADATSUMI_NO_KI_MUSIC_VIDEO_FULL.txt
 
