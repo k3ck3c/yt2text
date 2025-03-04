@@ -83,3 +83,23 @@ Detected language: Japanese
 [05:19.000 --> 05:48.980] ご視聴ありがとうございました
 
 [05:49.000 --> 06:18.980] ご視聴ありがとうございました
+...
+
+
+example 2
+
+sh yt2text.sh "https://www.youtube.com/watch?v=zXO_j0vriwk" en
+
+will create a file
+
+Charles_Dowding/Charles_Dowding-No_dig_Potato_Gardening_-_Expert_Tips_from_Charles_Dowding.txt
+
+which contains
+
+{"text":"Growing potatoes without digging. How is it done? The ground preparation is exactly the same as for any other vegetable. You don't need to have a special bed for potatoes. 
+
+You certainly don't need to dig a trench. So it's simply undisturbed soil in this case with mulch on top and my mulch is compost. So this is A few centimeters, maybe three, 
+
+four centimeters of compost here that we put on last autumn after clearing leaks, which interestingly were following potatoes.
+
+...
