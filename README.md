@@ -12,7 +12,7 @@ the command
 
 sh yt2text.sh "https://www.youtube.com/watch?v=xJCW_EJjkLg" jp w
 
-we pass jp to help determine the language and avoir analysis og the first 30 seconds of audio to determine the language
+we pass jp to help determine the language and avoid analysis of the first 30 seconds of audio to determine the language
 
 we pass w as we want to use locally whisper
 
