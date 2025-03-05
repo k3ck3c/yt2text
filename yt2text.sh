@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Options de sécurité et de gestion des erreurs
+set -eu
+
+# Fonction de gestion des erreurs
+error_exit() {
+    echo "ERREUR: $1" >&2
+    exit 1
+}
+
+
 # Paramètres par défaut
 lang="${2:-fr}"
 extract="${3:-api}"
