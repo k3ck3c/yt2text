@@ -7,7 +7,9 @@ sends the audio to whisper
 
 https://github.com/openai/whisper
 
-or any AI tool, lemonfoxapi
+(20 minutes of my PC core i5)
+
+or any AI tool, here lemonfoxapi (needs a subscription), about 1 minute
 
 https://api.lemonfox.ai/v1/audio/transcriptions
 
