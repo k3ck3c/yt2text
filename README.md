@@ -3,11 +3,20 @@ get the text of a Youtube Video using whisper or any AI tool
 this script 
 downloads only the audio of a Youtube vid
 gives a filename without emoticon or space, using the author and the title of the video
-sends the audio to whisper or any AI tool
+sends the audio to whisper 
+
+https://github.com/openai/whisper
+
+or any AI tool, lemonfoxapi
+
+https://api.lemonfox.ai/v1/audio/transcriptions
+
 creates a directory by YouTube author
+
 puts the text in the directory
 
 example 1
+
 the command 
 
 sh yt2text.sh "https://www.youtube.com/watch?v=xJCW_EJjkLg" jp w
